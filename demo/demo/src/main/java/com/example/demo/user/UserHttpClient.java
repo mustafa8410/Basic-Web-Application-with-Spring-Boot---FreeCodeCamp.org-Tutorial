@@ -6,8 +6,9 @@ import org.springframework.web.service.annotation.GetExchange;
 
 import java.util.List;
 
-public interface UserHttpClient {
-
+public interface UserHttpClient { //instead of coding UserRestClient, this can be used
+    
+    // you can use different types of clients, not only http
     // @HttpExchange
     @GetExchange("/users")
     List<User> findAll();
