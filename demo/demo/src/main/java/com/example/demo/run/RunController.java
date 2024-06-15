@@ -18,7 +18,7 @@ public class RunController {
 
     private final RunRepository runRepository;
 
-    RunController(RunRepository runRepository){
+    RunController(RunRepository runRepository){ //dependency injection
         this.runRepository = runRepository;
     }
 
